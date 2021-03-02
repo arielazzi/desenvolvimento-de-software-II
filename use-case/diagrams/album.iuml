@@ -1,0 +1,30 @@
+@startuml album
+
+left to right direction
+
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Admnistrador: as admnistrador
+
+Academico <|-- Autor
+Usuario <|- Academico
+Usuario <|-left- admnistrador
+
+rectangle Sistema {
+    rectangle Conta {
+        (Autenticar usuário)
+    }
+    rectangle Album {
+        Autor -- (Criar Album)
+        Usuario -- (Visualizar albuns)
+
+        (Autenticar usuário) <. (Criar album) : includes
+        (Autenticar usuário) <. (Visualizar albuns) : includes
+
+        (Visualizar albuns) <|-- (Visualizar albuns novos) 
+        (Visualizar albuns) <|-- (Visualizar albuns recentes) 
+        (Visualizar albuns) <|-- (Visualizar todos os albuns) 
+    }
+}
+
+@enduml

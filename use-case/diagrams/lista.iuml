@@ -1,0 +1,33 @@
+@startuml lista
+
+left to right direction
+
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Admnistrador: as Admnistrador
+
+Academico <|-- Autor
+Usuario <|-left- Academico
+Usuario <|-down- Admnistrador
+
+rectangle Sistema {
+    rectangle Conta {
+        (Autenticar usuário)
+    }
+    rectangle Lista {
+        Usuario -- (Criar lista de favoritos)
+        Usuario -- (Visualizar lista de favoritos) 
+        Usuario -- (Atualizar lista de favoritos) 
+        Usuario -- (Remover midia da lista de favoritos) 
+
+        (Autenticar usuário) <.. (Interagir com lista) : includes
+
+        (Autenticar usuário) <.. (Criar lista de favoritos) : includes
+        (Autenticar usuário) <.. (Visualizar lista de favoritos) : includes
+        (Autenticar usuário) <.. (Atualizar lista de favoritos) : includes
+        (Autenticar usuário) <.. (Remover midia da lista de favoritos) : includes
+
+    }
+}
+
+@enduml

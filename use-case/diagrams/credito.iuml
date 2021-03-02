@@ -1,0 +1,30 @@
+@startuml credito
+
+left to right direction
+
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Administrador: as Administrador
+
+Academico <|-- Autor
+Usuario <|-down- Academico
+Usuario <|-up- Administrador
+
+rectangle Sistema {
+    rectangle Conta {
+        (Autenticar usuário)
+    }
+    rectangle credito {
+        Usuario -- (Visualizar créditos)
+        Usuario -- (Adicionar créditos)
+
+        (Autenticar usuário) <.. (Visualizar créditos) : includes
+        (Autenticar usuário) <.. (Adicionar créditos) : includes
+
+        (Adicionar créditos) <|-- (Via cartão de crédito)
+        (Adicionar créditos) <|-- (Via boleto bancário)
+        (Adicionar créditos) <|-- (Via transferência bancária)
+    }
+}
+
+@enduml

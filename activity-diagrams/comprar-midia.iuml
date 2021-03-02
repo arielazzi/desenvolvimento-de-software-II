@@ -1,0 +1,21 @@
+@startuml comprar-midia
+
+start
+:Fazer uma busca pela mídia desejada;
+:Selecionar a opção **Comprar Mídia**;
+:Selecionar a via da compra;
+if (Verificar se o acadêmico contém crédito suficiente para compra) then (Sim)
+    :Fornecer sua senha de acesso para confirmação;
+    :Verificar a senha fornecida;
+    :Subtrair o valor da mídia do valor de créditos do acadêmico;
+    :Adicionar 90% do valor da mídia aos créditos do autor da mídia;
+    :Adicionar 10% do valor da mídia aos créditos do admnistrador do sistema;
+    :Adicionar a midia à lista de mídias compradas do acadêmico;
+    :Emitir o comprovante de pagamento;
+    :Adicionar o comprovante à lista de vendas realizadas;
+    stop
+else (Não)
+    :Informar acadêmico que ele não contém crédito suficiente para compra;
+    stop
+
+    @enduml

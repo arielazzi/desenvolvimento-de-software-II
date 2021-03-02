@@ -1,0 +1,23 @@
+@startuml conta
+
+left to right direction
+
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Admnistrador: as Admnistrador
+
+Academico <|-- Autor
+Usuario <|- Academico
+Usuario <|- Admnistrador
+
+
+rectangle Sistema {
+        rectangle Conta {
+            Usuario -- (Criar conta)
+            Usuario -- (Recuperar senha)
+            Usuario -- (Autenticar usuário)
+            admnistrador -- (Excluir conta)
+        }
+}
+
+@enduml

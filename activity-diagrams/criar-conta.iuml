@@ -1,0 +1,16 @@
+@startuml criar-conta
+
+start
+:Selecionar a opção **Criar Conta**;
+:Fornecer primeiro nome, último nome e e-mail;
+if (Verficar se o acadêmico contém uma conta previamente criada) then (Sim)
+    :Informar ao acadêmico que ele já contém uma conta;
+    stop
+else (Não)
+    repeat :Fornecer senha e confirmação de senha;
+    backward :Informar o acadêmico que os dados **senha** e **confirmação de senha** não são idênticos;
+    repeat while (Verificar se os dados **senha** e **confirmação de senha** são idênticos) is (Não) not (Sim)
+    :Criar uma nova conta vinculada aos dados fornecidos;
+    stop
+
+    @enduml

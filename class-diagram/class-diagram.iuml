@@ -1,0 +1,129 @@
+@startuml class
+
+enum TipoAcademicoEnum <<Enum>> {
+  ALUNO
+  PROFESSOR
+  TECNICOADM
+}
+
+enum TipoMidiaEnum <<Enum>> {
+  MUSICA
+  VIDEO
+  PODCAST
+  LIVRO
+}
+
+abstract class Usuario {
+  nome
+  ultimoNome
+  email
+  senha
+  credito
+  List<Midia> midiasAdquiridas
+  Map<TipoMidiaEnum, List<Midia>> midiasfavoritas
+}
+
+class Academico {
+  tipo : TipoAcademicoEnum
+}
+
+class Administrador {}
+
+class Album {
+  List<Musica> musicas
+}
+
+abstract class Midia {
+  nome
+  descricao
+  imagem
+  preco
+  autores
+  conteudo
+  dataCriacao
+  pagavel: boolean
+}
+
+abstract class MidiaPlayer {
+  duracao
+}
+
+class Dashboard {
+}
+
+class Livro {
+  numeroPaginas
+  categorias
+}
+
+class Musica {
+  categorias
+}
+
+class Video {
+  categorias
+}
+
+class Podcast {
+  categorias
+}
+
+Autor "1" *-- "1..*" Midia : cria > 
+
+Usuario o-- Midia
+
+Academico *-- TipoAcademicoEnum
+Usuario *-- TipoMidiaEnum
+
+Usuario <|-- Academico : < é um
+Academico <|-- Autor : < é um (se criou 1 ou mais midias)
+Usuario <|-- Administrador: < é uma
+
+Midia <|-- Livro  : < é uma
+Midia <|-- MidiaPlayer : < é uma
+MidiaPlayer <|-- Musica : tem >
+MidiaPlayer <|-- Video : tem >
+MidiaPlayer <|-- Podcast : tem >
+
+Musica "1..*" --o "0" Album
+
+interface VisualizarMidia <<Interface>> 
+interface RemoverMidia <<Interface>> 
+interface RemoverAcademico <<Interface>> 
+interface AtualizarMidia <<Interface>> 
+interface AdicionarCredito <<Interface>> 
+interface CriarAlbum <<Interface>> 
+interface VisualizarAlbum <<Interface>> 
+
+VisualizarAlbum <|.. Academico
+CriarAlbum <|.. Autor
+AdicionarCredito <|.. Usuario
+VisualizarMidia <|.. Usuario
+RemoverMidia <|.. Autor
+RemoverMidia <|.. Administrador
+RemoverAcademico <|.. Administrador
+AtualizarMidia <|.. Autor
+
+interface ExecutarMidiaPlayer <<Interface>> 
+interface ComprarMidia <<Interface>> 
+interface VenderMidia <<Interface>> 
+interface DownloadMidia <<Interface>> 
+interface AdicionarMidiaEmListaFavorito <<Interface>> 
+interface VisualizarCreditor <<Interface>> 
+interface VisualizarCreditor <<Interface>> 
+
+VisualizarCreditor <|.. Usuario
+AdicionarMidiaEmListaFavorito <|.. Usuario
+ExecutarMidiaPlayer <|.. Usuario
+ComprarMidia <|.. Usuario
+VenderMidia <|.. Usuario
+DownloadMidia <|.. Usuario
+
+Administrador --> Dashboard : <<delegates>>
+
+hide Dashboard attributes
+hide TipoAcademicoEnum methods
+hide TipoMidiaEnum methods
+
+
+@enduml

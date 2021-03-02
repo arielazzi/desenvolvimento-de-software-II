@@ -1,0 +1,46 @@
+@startuml midia
+
+left to right direction
+
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Administrador: as Administrador
+
+Academico <|-down- Autor
+Usuario <|- Academico
+Usuario <|-up- Administrador
+
+rectangle Sistema {
+    rectangle Conta {
+        (Autenticar usuário)
+    }
+     rectangle Midia {
+
+            Administrador -right--- (Remover mídia)
+
+            Autor -up- (Remover mídia)
+            Autor -up- (Atualizar midia)
+
+            (Autenticar usuário) <.up. (Remover mídia) : includes
+            (Autenticar usuário) <.up. (Atualizar midia) : includes
+            (Autenticar usuário) <.up. (Visualizar mídia) : includes
+            (Autenticar usuário) <.up. (Executar mídia) : includes
+            (Autenticar usuário) <.up. (Comprar mídia) : includes
+            (Autenticar usuário) <.up. (Vender mídia) : includes
+            (Autenticar usuário) <.up. (Download mídia) : includes
+            (Autenticar usuário) <.up. (Classificar mídia) : includes
+            (Autenticar usuário) <.up. (Executar buscas refinadas de mídia) : includes
+
+            (Comprar mídia) .> (Emitir comprovante) : includes
+
+            Usuario -- (Visualizar mídia)
+            Usuario -- (Executar mídia)
+            Usuario -- (Comprar mídia)
+            Usuario -- (Vender mídia)
+            Usuario -- (Download mídia)
+            Usuario -- (Classificar mídia)
+            Usuario -- (Executar buscas refinadas de mídia)
+        }
+}
+
+@enduml

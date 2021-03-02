@@ -1,0 +1,14 @@
+@startuml excluir-conta
+
+start
+:Fazer a busca pela conta que ele deseja excluir;
+:Selecionar a conta que ele deseja excluir;
+:Selecionar a opção **Excluir Conta**;
+repeat :Fornecer a sua senha de acesso para confirmação;
+backward :Informar admnistrador que a senha fornecida está **incorreta**;
+repeat while (Verificar se a senha está correta) is (Não) not (Sim)
+:Excluir conta;
+:Enviar um e-mail ao endereço de e-mail vinculado à conta, informando o acadêmico;
+stop
+
+@enduml

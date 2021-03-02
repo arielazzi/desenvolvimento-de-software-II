@@ -1,0 +1,29 @@
+@startuml criar-midia
+
+start
+:Selecionar a opção **Criar Mídia**;
+:Selecionar tipo de mídia;
+fork
+    :Selecionar música;
+fork again
+    :Selecionar livro;
+fork again
+    :Selecionar vídeo;
+fork again
+    :Selecionar podcast;
+end fork
+repeat :Fornecer dados da mídia;
+backward :Informar que o formato não é adequado;
+repeat while (Verificar se o formato é adequado) is (Não) not (Sim)
+:Selecionar valor da mídia;
+fork
+    :Selecionar opção livre acesso;
+fork again
+    :Selecionar opção paga;
+end fork
+:Confirmar dados;
+:Confirmar criação;
+:Criar mídia;
+stop
+
+@enduml
