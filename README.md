@@ -4,13 +4,13 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 ## Etapa 1 - Entrega: 27/04/2021
 
-- [x] Diagrama de casos de uso (2 pontos)
-- [x] Especificação de casos de uso (2 pontos)
-   - [x] mínimo 7 especificações detalhadas/completas
-   - [x] 5 informais; 
-- [x] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas)
-- [x] Diagrama de classes (modelo conceitual) (2 pontos) 
-- [x] Estimativa de esforço de desenvolvimento (2 pontos) 
+- [ ] Diagrama de casos de uso (2 pontos)
+- [ ] Especificação de casos de uso (2 pontos)
+   - [ ] mínimo 7 especificações detalhadas/completas
+   - [ ] 5 informais; 
+- [ ] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas)
+- [ ] Diagrama de classes (modelo conceitual) (2 pontos) 
+- [ ] Estimativa de esforço de desenvolvimento (2 pontos) 
 
 ## Etapa 2 - Entrega: 22/06/2021 
 
