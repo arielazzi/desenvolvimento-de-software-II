@@ -2,17 +2,17 @@
 
 Este repositório tem como objetivo o desenvolvimento das etapas I e II do trabalho da cadeira de Desenvolvimento de Software I 2020/2.
 
-## Etapa 1 - Entrega: 05/10/2020
+## Etapa 1 - Entrega: 27/04/2021
 
-- [x] Diagrama de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
-- [x] Especificação de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
+- [x] Diagrama de casos de uso (2 pontos)
+- [x] Especificação de casos de uso (2 pontos)
    - [x] mínimo 7 especificações detalhadas/completas
    - [x] 5 informais; 
-- [x] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas) → [@João Vitor](https://github.com/joaovitorps)
-- [x] Diagrama de classes (modelo conceitual) (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
-- [x] Estimativa de esforço de desenvolvimento (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
+- [x] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas)
+- [x] Diagrama de classes (modelo conceitual) (2 pontos) 
+- [x] Estimativa de esforço de desenvolvimento (2 pontos) 
 
-## Etapa 2 - Entrega: 23/11/2020 
+## Etapa 2 - Entrega: 22/06/2021 
 
 - [ ] Diagrama de classes (refinado) (3 pontos)
 - [ ] Diagrama de componentes (3 pontos)
