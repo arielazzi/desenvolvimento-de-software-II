@@ -4,20 +4,20 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 ## Etapa 1 - Entrega: 27/04/2021
 
-- [ ] Diagrama de casos de uso (2 pontos)
-- [ ] Especificação de casos de uso (2 pontos)
-   - [ ] mínimo 7 especificações detalhadas/completas
-   - [ ] 5 informais; 
-- [ ] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas)
-- [ ] Diagrama de classes (modelo conceitual) (2 pontos) 
-- [ ] Estimativa de esforço de desenvolvimento (2 pontos) 
+- [ ] Diagrama de casos de uso (1 pontos)
+- [ ] Especificação de casos de uso (1 pontos)
+   - [ ] 5 completas
+- [ ] Diagrama de classes (2 pontos)
+- [ ] Diagrama de sequência (2 pontos)
+   - [ ] 5 diagramas   
+- [ ] Diagrama de componentes (2 pontos)
+- [ ] Diagrama de implantação (2 pontos)
 
 ## Etapa 2 - Entrega: 22/06/2021 
 
-- [ ] Diagrama de classes (refinado) (3 pontos)
-- [ ] Diagrama de componentes (3 pontos)
-- [ ] Demais artefatos do T1 ajustados (4 pontos)
-
+- [ ] Cartões CRC (2 pontos)
+- [ ] Realização de casos de uso (3 pontos)
+- [ ] Documento de arquitetura de software (5 pontos)
 
 ## Descrição Geral 
 <details>
