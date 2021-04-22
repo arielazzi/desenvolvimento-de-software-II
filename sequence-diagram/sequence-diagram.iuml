@@ -1,0 +1,37 @@
+@startuml sequence-diagram
+actor Academico
+
+participant Usuario << (C,#ADD1B2) >>
+participant Midia << (C,#ADD1B2) >>
+participant MidiaPlayer << (C,#ADD1B2) >>
+
+activate Academico
+activate Usuario
+
+Academico -[#blue]> Usuario: autentica()
+Usuario -[#green]-> Academico: sucesso
+
+Academico -[#blue]> Usuario: adicionaCreditos()
+Usuario -[#green]-> Academico: creditosAdicionados
+
+activate Midia
+
+Usuario -[#blue]> Midia: visualizar()
+Midia -[#green]-> Usuario:
+Usuario -[#blue]> Midia: comprar()
+Midia -[#green]-> Usuario: midiaComprada
+Usuario -[#blue]> Midia: vender()
+Midia -[#green]-> Usuario:
+Usuario -[#blue]> Midia: download()
+Midia -[#green]-> Usuario: midia
+
+activate MidiaPlayer
+
+Midia -[#blue]> MidiaPlayer: executar()
+MidiaPlayer-[#green]-> Midia:
+
+deactivate MidiaPlayer
+deactivate Midia
+deactivate Usuario
+deactivate Academico
+@enduml

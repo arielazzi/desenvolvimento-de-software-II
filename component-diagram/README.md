@@ -1,1 +1,1 @@
-# Diagrama de sequência
+# Diagrama de componentes
