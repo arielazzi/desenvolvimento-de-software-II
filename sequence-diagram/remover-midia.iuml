@@ -1,0 +1,21 @@
+@startuml remover-midia
+actor Academico
+
+participant Usuario << (C,#ADD1B2) >>
+participant Administrador << (C,#ADD1B2) >>
+
+activate Academico
+activate Usuario
+activate Administrador
+
+Academico -[#blue]> Usuario: removerMidia()
+
+Usuario -[#blue]> Administrador: verificarSenha()
+Administrador -[#green]-> Usuario: sucesso
+
+Usuario -[#green]-> Academico: midiaRemovida
+
+deactivate Administrador
+deactivate Usuario
+deactivate Academico
+@enduml
