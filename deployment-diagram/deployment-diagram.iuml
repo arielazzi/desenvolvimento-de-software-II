@@ -1,0 +1,38 @@
+@startuml
+
+'sem essa tag vazia fica sem cores nos artefatos
+<style>
+</style>
+
+node WebServer as "Web Server" <<device>> {
+    artifact    index.html <<artifact>>
+}
+
+node ApplicationServer as "Application Server" <<device>> {
+    component Midia <<component>>
+    component Credito <<component>>
+    component Usuario <<component>>
+    component Conta <<component>>
+}
+
+node DatabaseServer as "Database Server" <<device>> {
+    artifact    Database <<artifact>>
+}
+
+node MediaServer as "Media Storage Server" <<device>> {
+    file    MediaFiles as "Media Files" <<file>> {
+    }
+}
+
+node UserPC as "User PC" <<device>> {
+    node WebBrowser as "Web Browser" <<device>> {
+        artifact    HTML5Player as "HTML5 Player" <<artifact>>
+    }
+}
+
+WebServer --- UserPC
+ApplicationServer --- UserPC
+ApplicationServer --- DatabaseServer
+ApplicationServer --- MediaServer
+
+@endum
