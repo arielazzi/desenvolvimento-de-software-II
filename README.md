@@ -4,14 +4,14 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 ## Etapa 1 - Entrega: 27/04/2021
 
-- [ ] Diagrama de casos de uso (1 pontos)
-- [ ] Especificação de casos de uso (1 pontos)
-   - [ ] 5 completas
-- [ ] Diagrama de classes (2 pontos)
-- [ ] Diagrama de sequência (2 pontos)
-   - [ ] 5 diagramas   
-- [ ] Diagrama de componentes (2 pontos)
-- [ ] Diagrama de implantação (2 pontos)
+- [x] Diagrama de casos de uso (1 pontos)
+- [x] Especificação de casos de uso (1 pontos)
+   - [x] 5 completas
+- [x] Diagrama de classes (2 pontos)
+- [x] Diagrama de sequência (2 pontos)
+   - [x] 5 diagramas   
+- [x] Diagrama de componentes (2 pontos)
+- [x] Diagrama de implantação (2 pontos)
 
 ## Etapa 2 - Entrega: 22/06/2021 
 
