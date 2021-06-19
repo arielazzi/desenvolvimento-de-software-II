@@ -1,4 +1,5 @@
 @startuml class
+skinparam nodesep 50
 
 enum TipoAcademicoEnum <<Enum>> {
   ALUNO
@@ -14,58 +15,92 @@ enum TipoMidiaEnum <<Enum>> {
 }
 
 abstract class Usuario {
-  nome
-  ultimoNome
-  email
-  senha
-  credito
-  List<Midia> midiasAdquiridas
-  Map<TipoMidiaEnum, List<Midia>> midiasfavoritas
+  -nome : String
+  -ultimoNome : String
+  -email : String
+  -senha : char[]
+  -credito : Currency
+  -midiasAdquiridas : List<Midia> 
+  -midiasfavoritas : Map<TipoMidiaEnum, List<Midia>>
+  ---
+  +visualizarMidia(Stirng nomeMidia) : Midia 
+  +adicionarCredito(Currency valor) : void 
+  +executarMidiaPlayer(String nomeMidiaPlayer) : MidiaPlayer 
+  +comprarMidia(Stirng nomeMidia) : Midia 
+  +venderMidia(Stirng nomeMidia) : void 
+  +downloadMidia(Stirng nomeMidia) : void 
+  +adicionarMidiaEmListaFavorito(Midia midia) : void 
+  +visualizarCreditos() : Currency
 }
 
 class Academico {
-  tipo : TipoAcademicoEnum
+  -tipo : TipoAcademicoEnum
 }
 
-class Administrador {}
+class Autor {
+  ---
+  +criarMidia() : Midia
+  +CriarAlbum() : Album
+  +removerMidia(Midia midia) : void
+  +AtualizarMidia(Midia midia) : void
+}
+
+class Administrador {
+  ---
+  +removerAcademico(Usuario usuario) : void
+  +removerMidia(Midia midia) : void
+}
 
 class Album {
-  List<Musica> musicas
+  -musicas : List<Musica>
+  ---
+  +adicionarMusica(Musica musica) : void
+  +removerMusica(Musica musica) : void
+  +exibirMusicas() : List<Musica> 
 }
 
 abstract class Midia {
-  nome
-  descricao
-  imagem
-  preco
-  autores
-  conteudo
-  dataCriacao
-  pagavel: boolean
+  -nome : String
+  -descricao : String
+  -imagem : byte[]
+  -preco : Currency
+  -autores : List<Autor>
+  -conteudo : byte[]
+  -dataCriacao : Date
+  -pagavel: boolean
+  ---
+  +visualizar() : void
+  +comprar() : void 
+  +vender() : void
+  +download() : Midia
 }
 
 abstract class MidiaPlayer {
-  duracao
+  -duracao : LocalTime
+  ---
+  +executar() : void
 }
 
 class Dashboard {
+  ---
+  +visualizarVendas(): void
 }
 
 class Livro {
-  numeroPaginas
-  categorias
+  -numeroPaginas : Int
+  -categorias : List<String>
 }
 
 class Musica {
-  categorias
+  -categorias : List<String> 
 }
 
 class Video {
-  categorias
+  -categorias : List<String> 
 }
 
 class Podcast {
-  categorias
+  -categorias : List<String> 
 }
 
 Autor "1" *-- "1..*" Midia : cria > 
@@ -81,11 +116,11 @@ Usuario <|-- Administrador: < é uma
 
 Midia <|-- Livro  : < é uma
 Midia <|-- MidiaPlayer : < é uma
-MidiaPlayer <|-- Musica : tem >
-MidiaPlayer <|-- Video : tem >
-MidiaPlayer <|-- Podcast : tem >
+MidiaPlayer <|-- Video : < é um
+MidiaPlayer <|-- Podcast : < é um
 
-Musica "1..*" --o "0" Album
+MidiaPlayer <|-- Musica : < é um
+Musica "1..* \n - Faixa" --o "0" Album : < tem
 
 interface VisualizarMidia <<Interface>> 
 interface RemoverMidia <<Interface>> 
@@ -103,23 +138,22 @@ RemoverMidia <|.. Autor
 RemoverMidia <|.. Administrador
 RemoverAcademico <|.. Administrador
 AtualizarMidia <|.. Autor
+Administrador --> Dashboard : <<delegates>>
 
 interface ExecutarMidiaPlayer <<Interface>> 
 interface ComprarMidia <<Interface>> 
 interface VenderMidia <<Interface>> 
 interface DownloadMidia <<Interface>> 
 interface AdicionarMidiaEmListaFavorito <<Interface>> 
-interface VisualizarCreditor <<Interface>> 
-interface VisualizarCreditor <<Interface>> 
+interface VisualizarCreditos <<Interface>> 
 
-VisualizarCreditor <|.. Usuario
+VisualizarCreditos <|.. Usuario
 AdicionarMidiaEmListaFavorito <|.. Usuario
 ExecutarMidiaPlayer <|.. Usuario
 ComprarMidia <|.. Usuario
 VenderMidia <|.. Usuario
 DownloadMidia <|.. Usuario
 
-Administrador --> Dashboard : <<delegates>>
 
 hide Dashboard attributes
 hide TipoAcademicoEnum methods
