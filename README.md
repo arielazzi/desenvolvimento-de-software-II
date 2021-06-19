@@ -41,6 +41,9 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 - O diagrama atual precisa ter mais detalhes de projeto para ser considerado um diagrama de projeto.
 
+![image](https://user-images.githubusercontent.com/17055516/122628480-95134900-d08c-11eb-81b2-d9b2686c8884.png)
+
+
 
 **Diagrama de Sequência (0,5 de 2,0)**
 - Há elementos nos diagramas de sequência que não são encontrados no diagrama de classes.
