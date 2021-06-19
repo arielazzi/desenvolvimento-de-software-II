@@ -1,0 +1,37 @@
+@startuml
+
+'sem essa tag vazia fica sem cores nos artefatos
+<style>
+</style>
+
+folder System {
+    folder frontend {
+        folder srcFront as "src" {
+            folder components
+            folder screens
+            folder frontUnitTests as "Unit tests"
+        }
+    }
+
+    folder backend {
+        folder Main {
+            folder srcBack as "src" {
+                folder controllers
+                folder services
+                folder repositories
+            }
+        }
+        folder Tests {
+            folder srcTestBack as "src" {
+                folder unitTests as "Unit Tests"
+                folder integrationTests as "Integration Tests"
+            }
+        }
+    }
+
+    folder database {
+        folder schemes
+    }
+}
+
+@endum
