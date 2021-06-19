@@ -1,22 +1,69 @@
-# :computer: Desenvolvimento de Software I 
+# :computer: Desenvolvimento de Software II
 
-Este repositório tem como objetivo o desenvolvimento das etapas I e II do trabalho da cadeira de Desenvolvimento de Software I 2020/2.
+Este repositório tem como objetivo o desenvolvimento das etapas I e II do trabalho da cadeira de Desenvolvimento de Software II 2021/1.
 
-## Etapa 1 - Entrega: 05/10/2020
+## Etapa 1 - Entrega: 27/04/2021
 
-- [x] Diagrama de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
-- [x] Especificação de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
-   - [x] mínimo 7 especificações detalhadas/completas
-   - [x] 5 informais; 
-- [x] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas) → [@João Vitor](https://github.com/joaovitorps)
-- [x] Diagrama de classes (modelo conceitual) (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
-- [x] Estimativa de esforço de desenvolvimento (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
+- [x] Diagrama de casos de uso (1 pontos)
+- [x] Especificação de casos de uso (1 pontos)
+   - [x] 5 completas
+- [x] Diagrama de classes (2 pontos)
+- [x] Diagrama de sequência (2 pontos)
+   - [x] 5 diagramas   
+- [x] Diagrama de componentes (2 pontos)
+- [x] Diagrama de implantação (2 pontos)
 
-## Etapa 2 - Entrega: 23/11/2020 
+## Etapa 2 - Entrega: 22/06/2021 
 
-- [ ] Diagrama de classes (refinado) (3 pontos)
-- [ ] Diagrama de componentes (3 pontos)
-- [ ] Demais artefatos do T1 ajustados (4 pontos)
+- [x] Diagrama de Caso de Uso
+- [ ] Especificação de Casos de Uso
+- [ ] Diagrama de Classes
+- [ ] Diagrama de Sequência
+- [ ] Diagrama de Componentes 
+- [x] Diagrama de Implantação
+- [ ] Cartões CRC (2 pontos)
+- [ ] Realização de casos de uso (3 pontos)
+- [ ] Documento de arquitetura de software (5 pontos)
+
+## Comentarios sobre primeira entrega
+
+**Caso de Uso (1,0 de 1,0)**
+- Diagrama apropriado.
+
+
+**Especificação de Casos de Uso (0,9 de 1,0)**
+- Especificações apropriadas. Recomendo alinhar as especificações ao diagrama de casos de uso.
+
+
+
+**Diagrama de Classes (1,0 de 2,0)**
+- Os relacionamentos do diagrama de classes precisam ter cardinalidades, papéis, sentido de leitura e nome.
+
+- O diagrama atual precisa ter mais detalhes de projeto para ser considerado um diagrama de projeto.
+
+![image](https://user-images.githubusercontent.com/17055516/122628480-95134900-d08c-11eb-81b2-d9b2686c8884.png)
+
+
+
+**Diagrama de Sequência (0,5 de 2,0)**
+- Há elementos nos diagramas de sequência que não são encontrados no diagrama de classes.
+
+- Prezar pelo alinhamento entre o diagrama de classes e sequência.
+
+- Diagramas precisam ser detalhados. Da forma atual, os diagramas não apresentam detalhes relevantes ao projeto da aplicação.
+
+- Diagramas precisam ser revisados. Exemplo: diagramas "Criar Conta", "Excluir Conta", "Remover Mídia" não estão fazendo sentido.
+
+
+**Diagrama de Componentes (1,2 de 2,0)**
+- Apenas quatro componentes seriam suficientes para implementar todo o projeto?
+
+- Componentes importantes não estariam ausentes? Exemplo: componente de autenticação?
+
+
+**Diagrama de Implantação (2,0 de 2,0)**
+- Diagrama apropriado
+
 
 
 ## Descrição Geral 
@@ -49,5 +96,6 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
     <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars3.githubusercontent.com/u/17055516?s=460&u=8349659f0012b935bd8dd92c822b3fca02ed3049&v=4?v=3" width="100px;" alt=""/><br /><sub><b>Ariel Azzi</b></sub></a></td>
      <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars2.githubusercontent.com/u/25901846?s=460&u=fe44793f8027f6187420ed4d628697df3318cc76&v=4?v=3" width="100px;" alt=""/><br /><sub><b>Andresho</b></sub></a></td>
      <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars3.githubusercontent.com/u/48125062?s=460&v=4?v=3" width="100px;" alt=""/><br /><sub><b>joaovitorps</b></sub></a></td>
+     <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars.githubusercontent.com/u/46815659?v=4" width="100px;" alt=""/><br /><sub><b>Lucassouzadi</b></sub></a></td>
   </tr>
 </table>

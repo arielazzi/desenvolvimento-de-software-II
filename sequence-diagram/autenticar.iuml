@@ -1,0 +1,18 @@
+@startuml autenticar
+actor Academico
+
+participant Usuario << (C,#ADD1B2) >>
+
+activate Academico
+activate Usuario
+
+Academico -[#blue]> Usuario: autentica()
+
+Usuario -[#blue]> Usuario: verificarDadosUsuario()
+Usuario -[#blue]> Usuario: criarToken()
+
+Usuario -[#green]-> Academico: token
+
+deactivate Usuario
+deactivate Academico
+@enduml

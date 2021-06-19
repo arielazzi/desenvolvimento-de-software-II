@@ -1,0 +1,22 @@
+@startuml
+
+component Midia
+component Credito
+component Usuario
+component Conta
+
+Usuario --(0-- Credito : VisualizarCredito
+Usuario --(0-- Credito : AdicionarCredito
+
+Usuario --(0-- Midia : VenderMidia
+Usuario --(0-- Midia : ComprarMidia
+Usuario --(0-- Midia : ExecutarMidia
+Usuario --(0-- Midia : DownloadMidia
+Usuario --(0-- Midia : AdicionarMidiaEmFavoritos
+
+Conta --0)-- Usuario : RecuperarSenha
+Conta --0)-- Usuario : ExcluirConta
+Conta --0)-- Usuario : CriarConta
+Conta --0)-- Usuario : Autentica
+
+@endum

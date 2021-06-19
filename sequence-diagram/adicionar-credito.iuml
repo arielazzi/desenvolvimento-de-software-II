@@ -1,0 +1,31 @@
+@startuml adicionar-credito
+actor Academico
+
+participant Usuario << (C,#ADD1B2) >>
+participant Pagamento << (C,#ADD1B2) >>
+participant Administrador << (C,#ADD1B2) >>
+
+activate Academico
+activate Usuario
+activate Administrador
+activate Pagamento
+
+Academico -[#blue]> Usuario: adicionarCreditos()
+
+Usuario -[#blue]> Administrador: verificarSenha()
+Administrador -[#green]-> Usuario: sucesso
+
+Usuario -[#blue]> Usuario: criarPedido()
+
+Usuario -[#blue]> Pagamento: adicionarPedido()
+Pagamento -[#green]-> Usuario: pagamentoRealizado
+
+Usuario -[#blue]> Usuario: removerPedido()
+
+Usuario -[#green]-> Academico: creditosAdicionados
+
+deactivate Pagamento
+deactivate Administrador
+deactivate Usuario
+deactivate Academico
+@enduml
