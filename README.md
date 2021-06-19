@@ -15,9 +15,53 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 ## Etapa 2 - Entrega: 22/06/2021 
 
+- [x] Diagrama de Caso de Uso (1,0 de 1,0)
+- [ ] Especificação de Casos de Uso (0,9 de 1,0)
+- [ ] Diagrama de Classes (1,0 de 2,0)
+- [ ] Diagrama de Sequência (0,5 de 2,0)
+- [ ] Diagrama de Componentes (1,2 de 2,0)
+- [x] Diagrama de Implantação (2,0 de 2,0)
 - [ ] Cartões CRC (2 pontos)
 - [ ] Realização de casos de uso (3 pontos)
 - [ ] Documento de arquitetura de software (5 pontos)
+
+## Comentarios sobre primeira entrega
+
+**Caso de Uso (1,0 de 1,0)**
+- Diagrama apropriado.
+
+
+**Especificação de Casos de Uso (0,9 de 1,0)**
+- Especificações apropriadas. Recomendo alinhar as especificações ao diagrama de casos de uso.
+
+
+
+**Diagrama de Classes (1,0 de 2,0)**
+- Os relacionamentos do diagrama de classes precisam ter cardinalidades, papéis, sentido de leitura e nome.
+
+- O diagrama atual precisa ter mais detalhes de projeto para ser considerado um diagrama de projeto.
+
+
+**Diagrama de Sequência (0,5 de 2,0)**
+- Há elementos nos diagramas de sequência que não são encontrados no diagrama de classes.
+
+- Prezar pelo alinhamento entre o diagrama de classes e sequência.
+
+- Diagramas precisam ser detalhados. Da forma atual, os diagramas não apresentam detalhes relevantes ao projeto da aplicação.
+
+- Diagramas precisam ser revisados. Exemplo: diagramas "Criar Conta", "Excluir Conta", "Remover Mídia" não estão fazendo sentido.
+
+
+**Diagrama de Componentes (1,2 de 2,0)**
+- Apenas quatro componentes seriam suficientes para implementar todo o projeto?
+
+- Componentes importantes não estariam ausentes? Exemplo: componente de autenticação?
+
+
+**Diagrama de Implantação (2,0 de 2,0)**
+- Diagrama apropriado
+
+
 
 ## Descrição Geral 
 <details>
