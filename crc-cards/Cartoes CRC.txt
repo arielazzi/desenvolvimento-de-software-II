@@ -1,0 +1,34 @@
+#Cartões criados usando a ferramenta https://www.inf.ufpr.br/andrey/ci162/crc/
+
+Nome da Classe: Midia
+Responsabilidades:  Nome Descricao Imagem Preco Autores Conteudo DataDeCriacao Categoria Pagável VisualizarMidia ComprarMidia VenderMidia DownloadMidia
+Colaboradores:  
+ 
+Nome da Classe: Academico
+Responsabilidades:  Nome UltimoNome Tipo E-mail Senha Creditos MidiasAdquiridas MidiasFavoritas ComprarMidia VisualizarMidia AdicionaFavorito VisualizarAlbum
+Colaboradores:  Midia
+ 
+Nome da Classe: Autor
+Responsabilidades:  Nome UltimoNome E-mail Senha Creditos MidiasAdquiridas MidiasCriadas MidiasFavoritas CriaMidia VisualizaMidiasCriadas RemoveMidiasCriadas AtualizaMidiasCriadas
+Colaboradores:  Midia
+ 
+Nome da Classe: Musica
+Responsabilidades:  
+Colaboradores:  
+ 
+Nome da Classe: Video
+Responsabilidades:  
+Colaboradores:  
+ 
+Nome da Classe: Podcast
+Responsabilidades:  
+Colaboradores:  
+ 
+Nome da Classe: Administrador
+Responsabilidades:  Nome UltimoNome E-mail Senha FiscalizaAtividades RemoveMidias NotificarAutor RemoverAcademico RemoverAutor
+Colaboradores:  MidiaAcademicoAutor
+ 
+Nome da Classe: Album
+Responsabilidades:  Nome Ano AdicionaMusica RemoveMusica ExibirMusica
+Colaboradores:  Musica
+ 
