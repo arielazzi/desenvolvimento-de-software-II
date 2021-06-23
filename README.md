@@ -15,13 +15,13 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 ## Etapa 2 - Entrega: 22/06/2021 
 
-- [x] Diagrama de Caso de Uso
-- [ ] Especificação de Casos de Uso
+- [ ] Diagrama de Caso de Uso
+- [x] Especificação de Casos de Uso
 - [x] Diagrama de Classes
 - [ ] Diagrama de Sequência
 - [ ] Diagrama de Componentes 
 - [x] Diagrama de Implantação
-- [ ] Cartões CRC (2 pontos)
+- [x] Cartões CRC (2 pontos)
 - [ ] Realização de casos de uso (3 pontos)
 - [x] Documento de arquitetura de software (5 pontos)
 
