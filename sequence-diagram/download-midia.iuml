@@ -1,0 +1,22 @@
+@startuml download-midia
+actor Academico
+
+participant Usuario << (C,#ADD1B2) >>
+participant Midia << (C,#ADD1B2) >>
+
+activate Academico
+activate Usuario
+activate Midia
+
+Academico -[#blue]> Usuario: visualizarMidia()
+Usuario -[#blue]> Midia: visualizar()
+Midia -[#green]-> Academico: midia
+Academico -[#blue]> Usuario: downloadMidia()
+Usuario -[#blue]> Midia: download()
+Midia -[#green]-> Usuario: sucesso
+Usuario -[#green]-> Academico: downloadEfetuado
+
+deactivate Midia
+deactivate Usuario
+deactivate Academico
+@enduml

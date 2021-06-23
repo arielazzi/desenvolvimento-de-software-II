@@ -1,0 +1,23 @@
+@startuml criar-midia
+actor Academico
+
+participant Autor << (C,#ADD1B2) >>
+participant Usuario << (C,#ADD1B2) >>
+participant Midia << (C,#ADD1B2) >>
+
+activate Academico
+activate Autor
+activate Usuario
+activate Midia
+
+Academico -[#blue]> Autor: criarMidia()
+Autor -[#green]-> Academico: MidiaCriada
+Academico -[#blue]> Usuario: visualizarMidia()
+Usuario -[#blue]> Midia: visualizar()
+Midia -[#green]-> Academico: midia
+
+deactivate Midia
+deactivate Usuario
+deactivate Autor
+deactivate Academico
+@enduml

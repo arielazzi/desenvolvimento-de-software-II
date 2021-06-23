@@ -1,0 +1,29 @@
+@startuml comprar-midia
+actor Academico
+
+participant Usuario << (C,#ADD1B2) >>
+participant Midia << (C,#ADD1B2) >>
+participant Administrador << (C,#ADD1B2) >>
+
+activate Academico
+activate Usuario
+activate Administrador
+activate Midia
+
+Academico -[#blue]> Usuario: comprarMidia()
+
+Usuario -[#blue]> Usuario: visualizarCreditos()
+Usuario -[#blue]> Administrador: verificarSenha()
+Administrador -[#green]-> Usuario: sucesso
+
+Usuario -[#blue]> Midia: comprar()
+Midia -[#green]-> Usuario: sucesso
+
+Usuario -[#blue]> Usuario: adicionarMidiaEmListaCompradas()
+Usuario -[#green]-> Academico: MidiaComprada
+
+deactivate Midia
+deactivate Administrador
+deactivate Usuario
+deactivate Academico
+@enduml

@@ -7,14 +7,14 @@
 
 ![](autenticar.svg)
 
-## Criar Conta
+## Criar Mídia
 
-![](criar-conta.svg)
+![](criar-midia.svg)
 
-## Excluir Conta
+## Download Mídia
 
-![](excluir-conta.svg)
+![](download-midia.svg)
 
-## Remover Mídia
+## Comprar Mídia
 
-![](remover-midia.svg)
+![](comprar-midia.svg)
