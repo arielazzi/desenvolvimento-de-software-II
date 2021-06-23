@@ -18,11 +18,11 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 - [ ] Diagrama de Caso de Uso
 - [x] Especificação de Casos de Uso
 - [x] Diagrama de Classes
-- [ ] Diagrama de Sequência
+- [x] Diagrama de Sequência
 - [ ] Diagrama de Componentes 
 - [x] Diagrama de Implantação
 - [x] Cartões CRC (2 pontos)
-- [ ] Realização de casos de uso (3 pontos)
+- [x] Realização de casos de uso (3 pontos)
 - [x] Documento de arquitetura de software (5 pontos)
 
 ## Comentarios sobre primeira entrega
