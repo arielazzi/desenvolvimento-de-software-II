@@ -15,7 +15,7 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 ## Etapa 2 - Entrega: 22/06/2021 
 
-- [ ] Diagrama de Caso de Uso
+- [x] Diagrama de Caso de Uso
 - [x] Especificação de Casos de Uso
 - [x] Diagrama de Classes
 - [x] Diagrama de Sequência
